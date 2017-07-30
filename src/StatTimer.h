@@ -44,13 +44,14 @@
 #define __CSTATTIMER_H__
 
 #include <string.h>
+#include <evdns.h>
 
 #if WIN32
   #include <Winsock2.h>
   #include <time.h>
 #endif
 
-#ifdef _LINUX
+#ifdef _UNIX_
   #include <stdio.h>
   #include <sys/time.h>
 #endif

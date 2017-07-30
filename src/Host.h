@@ -61,7 +61,7 @@ extern "C"
   #define __WORDSIZE 32
 #endif
 
-#if defined(_LINUX) || defined(_DARWIN)
+#if defined(__unix__) || defined(__APPLE__)
     typedef unsigned char  uint8;
     typedef char           int8;
     typedef unsigned short uint16;
